@@ -9,8 +9,8 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={3} groundColor="black" />
-      <pointLight intensity={5} />
+      <hemisphereLight intensity={2} groundColor="black" />
+      <pointLight intensity={3} />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -21,8 +21,8 @@ const Computers = ({ isMobile }) => {
       />
       <primitive
         object={computer.scene}
-        scale={0.65}
-        position={[0, -3.25, -1.5]}
+        scale={isMobile ? 0.7 : 0.75}
+        position={isMobile ? [0,-3,-2.2]: [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -33,16 +33,21 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width:500');
+    // An event listener to listen to changes to the screen size
+    const mediaQuery = window.matchMedia('(max-width:500px)');
 
+    // Set initial value of the 'isMobile' state variable
     setIsMobile(mediaQuery.matches);
 
+    // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (e) => {
       setIsMobile(e.matches)
     }
 
+    // Add a callback function as a listener for changes to the media query
     mediaQuery.addEventListener('change', handleMediaQueryChange);
 
+    // Remove the listener when the component is unmounted
     return () => {
       mediaQuery.removeEventListener('change', handleMediaQueryChange);
     }
