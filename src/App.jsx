@@ -29,11 +29,12 @@ const App = () => {
         <Feedbacks />
         <div className="relative z-0">
           <Contact />
-          <ToastContainer theme="dark" />
           <StarsCanvas />
         </div>
       </div>
+      <ToastContainer theme="dark" className="fixed z-50" />
     </BrowserRouter>
+    
   );
 };
 
