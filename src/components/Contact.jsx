@@ -6,6 +6,8 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { Slide, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const formRef = useRef();
@@ -42,7 +44,12 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible");
+          // alert("Thank you. I will get back to you as soon as possible");
+          toast.success("Email sent", {
+            transition: Slide,
+            position: "top-right",
+            autoClose: 5000,
+          });
 
           setForm({
             name: "",
@@ -55,7 +62,8 @@ const Contact = () => {
 
           console.log(error);
 
-          alert("Something went wrong. Please try again");
+          // alert("Something went wrong. Please try again");
+          <Toast type="error" message="Failed" />;
         }
       );
   };
