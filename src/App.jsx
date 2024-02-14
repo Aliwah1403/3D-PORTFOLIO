@@ -1,5 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 
+import { ToastContainer } from "react-toastify";
+
 import {
   About,
   Contact,
@@ -27,6 +29,7 @@ const App = () => {
         <Feedbacks />
         <div className="relative z-0">
           <Contact />
+          <ToastContainer theme="dark" />
           <StarsCanvas />
         </div>
       </div>
