@@ -22,6 +22,8 @@ import {
     carrent,
     jobit,
     tripguide,
+    dcbconsulting,
+    fxrnation,
     threejs,
 } from "../assets";
 
@@ -198,6 +200,31 @@ const testimonials = [
 
 const projects = [
     {
+        name: "Fuego X Relvetti",
+        description:
+            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        tags: [
+            {
+                name: "html",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "firebase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "nodejs",
+                color: "green-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: fxrnation,
+        source_code_link: "https://github.com/Aliwah1403",
+    },
+    {
         name: "Car Rent",
         description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
@@ -217,6 +244,27 @@ const projects = [
         ],
         image: carrent,
         source_code_link: "https://github.com/Aliwah1403",
+    },
+    {
+        name: "DCB Consulting",
+        description:
+            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        tags: [
+            {
+                name: "html",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "javascript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: dcbconsulting,
+        source_code_link: "https://github.com/Aliwah1403/DCB-Consulting-LLP",
     },
     {
         name: "Job IT",
