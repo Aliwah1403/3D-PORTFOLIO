@@ -32,9 +32,16 @@ const App = () => {
           <StarsCanvas />
         </div>
       </div>
-      <ToastContainer theme="dark" className="fixed z-50" />
+      <ToastContainer
+        theme="dark"
+        transition:Slide
+        position="top-right"
+        autoClose={5000}
+        pauseOnHover={false}
+        draggable
+        className="fixed z-50"
+      />
     </BrowserRouter>
-    
   );
 };
 
