@@ -2,7 +2,7 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, live } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_web_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -45,16 +46,16 @@ const ProjectCard = ({
             </div>
 
             {/* Code below will add a web icon that links the photo to the live url of the project */}
-            {/* <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            <div
+              onClick={() => window.open(live_web_link, "_blank")}
+              className="black-gradient w-10 h-10 ml-1.5 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
-                src={github}
-                alt="github"
+                src={live}
+                alt="live-link"
                 className="w-1/2 h-1/2 object-contain"
               />
-            </div> */}
+            </div>
           </div>
         </div>
 
@@ -90,7 +91,7 @@ const Works = () => {
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
+          links to code repositories (Github Icon) and live demos (Globe Icon) in it. It reflects my
           ability to solve complex problems, work with different technologies
           and manage projects effectively.
         </motion.p>

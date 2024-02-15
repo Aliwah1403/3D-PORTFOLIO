@@ -223,6 +223,7 @@ const projects = [
         ],
         image: fxrnation,
         source_code_link: "https://github.com/Aliwah1403",
+        live_web_link: "https://fxrnation.co.ke/"
     },
     {
         name: "Car Rent",
@@ -265,6 +266,7 @@ const projects = [
         ],
         image: dcbconsulting,
         source_code_link: "https://github.com/Aliwah1403/DCB-Consulting-LLP",
+        live_web_link: "https://www.dcbconsulting.co.ke"
     },
     {
         name: "Job IT",
