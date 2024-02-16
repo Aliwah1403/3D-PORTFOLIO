@@ -216,7 +216,7 @@ const projects = [
   {
     name: "Fuego X Relvetti",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to shop for products from Fuego X Relvetti - A Kenyan Streetwear Brand , providing a convenient and efficient way to purchase their products",
     tags: [
       {
         name: "html",
@@ -263,7 +263,7 @@ const projects = [
   {
     name: "DCB Consulting",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web application that allows users to check financial services offered by DCB Consulting LLP. Through the application you can get in touch with the company through the provided contact forms",
     tags: [
       {
         name: "html",
