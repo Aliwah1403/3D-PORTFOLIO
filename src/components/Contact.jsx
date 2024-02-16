@@ -46,7 +46,7 @@ const Contact = () => {
           setLoading(false);
           // alert("Thank you. I will get back to you as soon as possible");
           toast.success("Thank you. I will get back to you as soon as possible", {
-            className: "bg-black-200"
+            className: "bg-black-200 text-white font-small"
           });
 
           setForm({
@@ -61,7 +61,9 @@ const Contact = () => {
           console.log(error);
 
           // alert("Something went wrong. Please try again");
-          toast.error('Something went wrong. Please try again')
+          toast.error('Something went wrong. Please try again', {
+            className: "bg-black-200 text-white font-small"
+          })
         }
       );
   };
