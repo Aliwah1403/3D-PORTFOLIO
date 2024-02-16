@@ -25,6 +25,8 @@ import {
   dcbconsulting,
   fxrnation,
   threejs,
+  firebase,
+  vite,
 } from "../assets";
 
 export const navLinks = [
@@ -79,17 +81,25 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "Firebase",
+    icon: firebase,
   },
+  {
+    name: "Vite",
+    icon: vite,
+  },
+  //   {
+  //     name: "TypeScript",
+  //     icon: typescript,
+  //   },
   {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  //   {
+  //     name: "Redux Toolkit",
+  //     icon: redux,
+  //   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -114,10 +124,10 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  //   {
+  //     name: "docker",
+  //     icon: docker,
+  //   },
 ];
 
 const experiences = [
